@@ -3,12 +3,9 @@ Base test for config
 multiline
 /etc/sysconfig/test
 ---
-^Another one bites the dust$
-^And another one gone$
-^And a third one gone$
+^Another one bites the dust\nAnd another one gone\nAnd a third one gone$
 ^ABOOL=yes$
 ^ANOTHER=one$
 ^SOME=example$
 ^THE_CLASSIC=foobar$
-^Hey, Im gonna get you, too$
-^Another one bites the dust$
+^Hey, Im gonna get you, too\nAnother one bites the dust$
