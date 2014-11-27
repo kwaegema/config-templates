@@ -6,6 +6,7 @@ variable FULL_HOSTNAME = 'storage2201';
 prefix "/software/components/metaconfig/services/{/etc/sysconfig/ctdb}/contents/service";
 
 "ctdb_debuglevel" = 2;
+"ctdb_ganesha_rec_link_dst" = "/storage/ganesharecdir";
 "ctdb_manages_nfs" = true;
 "ctdb_manages_samba"= false;
 "ctdb_nfs_skip_share_check" = true;
