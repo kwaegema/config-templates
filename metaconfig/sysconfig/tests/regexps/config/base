@@ -1,6 +1,14 @@
 Base test for config
 ---
 multiline
+/etc/sysconfig/test
 ---
-$wontmatch^
-
+^Another one bites the dust$
+^And another one gone$
+^And a third one gone$
+^ABOOL=yes$
+^ANOTHER=one$
+^SOME=example$
+^THE_CLASSIC=foobar$
+^Hey, Im gonna get you, too$
+^Another one bites the dust$
