@@ -15,4 +15,4 @@ multiline
 ^NFS_SERVER_MODE=ganesha$
 ^ulimit -n 10000$
 ^/usr/bin/waitforgpfs.sh /dev/scratchtest$
-
+^/usr/bin/waitforgpfs.sh /dev/scratchtest\nulimit -n 10000\n(.*\n)*$
