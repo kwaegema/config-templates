@@ -27,7 +27,7 @@ type ctdb_public_addresses = ctdb_public_address[];
 type ctdb_nodes = type_ip[];
 
 @{ type for configuring the ctdb config file @}
-type ctdb_service = {
+type sysconfig_ctdb = {
     'ctdb_debuglevel'           ? long(0..)
     'ctdb_ganesha_rec_link_dst' ? string
     'ctdb_logfile'              ? string
@@ -40,6 +40,5 @@ type ctdb_service = {
     'ctdb_syslog'               ? boolean
     'nfs_hostname'              ? type_fqdn
     'nfs_server_mode'           ? string
-    'prologue'                  ? string    
 };
 

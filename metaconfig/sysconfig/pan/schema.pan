@@ -3,10 +3,10 @@ declaration template metaconfig/sysconfig/schema;
 include 'pan/types';
 
 type sysconfig_generic = {
-    'prologue' : string[]
+    'booleans' ? string[]
     'config'   : nlist
-    'epilogue' : string[]
-    'booleans' : string[]
+    'epilogue' ? string[]
+    'prologue' ? string[]
 };
 
     

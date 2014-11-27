@@ -2,8 +2,12 @@ unique template metaconfig/ctdb/config;
 
 include 'metaconfig/ctdb/schema';
 
-bind "/software/components/metaconfig/services/{/etc/sysconfig/ctdb}/contents/service" = ctdb_service;
+include 'metaconfig/sysconfig/config';
 
+bind "/software/components/metaconfig/services/{/etc/sysconfig/ctdb}/contents" = sysconfig_generic;
+
+bind "/software/components/metaconfig/services/{/etc/sysconfig/ctdb}/contents/config" = sysconfig_ctdb;
 prefix "/software/components/metaconfig/services/{/etc/sysconfig/ctdb}";
 "daemon/0" = "ctdb";
-"module" = "ctdb/sysconfig";
+"module" = "sysconfig/main";
+
